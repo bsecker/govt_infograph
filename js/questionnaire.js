@@ -37,7 +37,7 @@ componentList = [
     new component("I am after ", ['something specific','general info']),
     new component("I am ", ['65 or under','over 65']),
     new component("I have insurance ", ['Yes','No']),
-    new component("I am able to arrange transport for myself to get to appointments ", ['Yes','No']),
+    new component("I am able to arrange transport for myself to get to appointments ", ['No','Yes']),
 ];
 
 // update visible content.
