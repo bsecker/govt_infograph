@@ -9,14 +9,77 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
     <!--PROJECT JS-->
     <script src="js/questionnaire.js"></script>
 
+    <!-- PROJECT CSS -->
+    <link rel="stylesheet" href="css/master.css">
+
 </head>
 <body>
-    <div id="content">
-        
+
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand gov-logo">New Zealand Government</a>
+        <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to the </h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
     </div>
+
+    <div class="container">
+        <!-- FIRST Q -->
+        <h2>What do you need help with?</h2>
+        <section class="icon-section question-one">
+
+            <div class="icon-container">
+                <div class="icon-placeholder"></div>
+                <h4>Health</h4>
+            </div>
+            <div class="icon-container">
+                <div class="icon-placeholder"></div>
+                <h4>Finance</h4>
+            </div>
+            <div class="icon-container">
+                <div class="icon-placeholder"></div>
+                <h4>Property</h4>
+            </div>
+            <div class="icon-container">
+                <div class="icon-placeholder"></div>
+                <h4>Transport</h4>
+            </div>
+        </section>
+        <!-- FIRST Q END -->
+
+        <section class="form-section">
+            <ul class="question-list">
+                <li class="question-list__item">
+                    <label for="answerOne" class="question">
+                        <span class="question__label">
+                            I am looking for a
+                        </span>
+                        <input class="question__input" type="text" id="answerOne" name="answerOne"></input>
+                    </label>
+                </li>
+
+            </ul>
+
+        </section>
+
+
+
+
+    </div>
+
+
 </body>
 </html>

@@ -1,0 +1,28 @@
+.container {
+  text-align: center; }
+
+.gov-logo {
+  color: white; }
+
+.navbar-brand {
+  color: white; }
+
+.icon-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem 0 3rem 0; }
+
+.icon-container {
+  text-align: center; }
+
+.icon-placeholder {
+  margin: 0 auto;
+  border-radius: 100%;
+  background: blue;
+  width: 100px;
+  height: 100px; }
+
+.question-one {
+  margin-top: 3rem; }
+
+/*# sourceMappingURL=master.css.map */
