@@ -24,9 +24,9 @@ componentList = [
 // update visible content.
 function updateContent() {
     var parsed = new DOMParser().parseFromString(componentList[current].render(), "text/html");
-    document.getElementById("content").innerHTML(parsed);
+    document.getElementById("content").appendChild(parsed);
     current++;
-
 }
 
 var current = 0;
+document.getElementById("initialQuestion").addEventListener("click", () => updateContent());
