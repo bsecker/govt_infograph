@@ -35,3 +35,30 @@
 .question-one {
     margin-top: 3rem;
 }
+
+.question-list {
+    list-style: none;
+
+}
+
+.question-list__item {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.question__input {
+    border: 0;
+    border-bottom: 1px solid black;
+    box-shadow: none;
+    outline: none;
+    width: 200px;
+    &:focus {
+        border-bottom-color: blue;
+    }
+}
+
+
+
+.question__input--short {
+    width: 100px;
+}
