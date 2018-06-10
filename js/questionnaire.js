@@ -10,23 +10,34 @@ function component(question, answerList) {
 
         // add dropdown with answers
 
-        // let som = `<div>${myVar}</div>`;
+        for (answer in this.answerList) {
+            outputString.concat(
+                ``
+            );
+        }
+
+        outputString.concat();
+
         return this.question;
     };
 }
 
 componentList = [
-    component("I am asking about ", ['myself','another person']),
-    component("I need a ", ['minor operation','major operation', 'GP visit']),
-    component("I am after ", ['something specific','general info']),
+    new component("I am asking about ", ['myself','another person']),
+    new component("I need a ", ['minor operation','major operation', 'GP visit']),
+    new component("I am after ", ['something specific','general info']),
 ];
 
 // update visible content.
 function updateContent() {
+    // should draw the infograph if out of questions
+    if (current > componentList.length) return;
+
+    // parse each render method within each component and add to DOM
     var parsed = new DOMParser().parseFromString(componentList[current].render(), "text/html");
-    document.getElementById("content").appendChild(parsed);
+    document.getElementById("content").appendChild(parsed.body);
     current++;
 }
 
 var current = 0;
-document.getElementById("initialQuestion").addEventListener("click", () => updateContent());
+document.getElementById("initial_button").addEventListener("click", () => updateContent());
