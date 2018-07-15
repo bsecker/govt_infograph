@@ -32,4 +32,4 @@ For our solution, the team focused on front end development, and our biggest cha
 Our Presentation slides are [here](https://docs.google.com/presentation/d/1jQirGcl2gLKE0VDrPeudq38R-pF1WyxkllxcFs1-hf8/edit#slide=id.gc6f90357f_0_0).
 
 # Design Mockup
-![lol](test.com)
+![img](https://github.com/bsecker/govt_infograph/blob/master/image2.jpg)
